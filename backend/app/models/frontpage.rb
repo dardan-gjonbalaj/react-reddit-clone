@@ -1,0 +1,2 @@
+class Frontpage < ApplicationRecord
+end
