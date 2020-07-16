@@ -39,9 +39,31 @@ class Comments extends Component {
         <Post data={this.state.post} />
         <div>
           {this.state.comments[0].map((comment) => (
-            <div>
-              <p>{comment.data.body}</p>
+            <div style={{ border: "1px solid black", marginBottom: "1rem" }}>
+              <p dangerouslySetInnerHTML={{ __html: comment.data.body_html }} />
               <h3>{comment.data.author}</h3>
+
+              {comment.data.replies &&
+                comment.data.replies.data.children.map((c) => {
+                  if (c.kind === "more") {
+                    return `${c.data.count} more replies`;
+                  }
+
+                  return (
+                    <div
+                      style={{
+                        border: "1px solid black",
+                        marginBottom: "1rem",
+                        marginLeft: "1rem",
+                      }}
+                    >
+                      <p
+                        dangerouslySetInnerHTML={{ __html: c.data.body_html }}
+                      />
+                      <h3>{c.data.author}</h3>
+                    </div>
+                  );
+                })}
             </div>
           ))}
         </div>
