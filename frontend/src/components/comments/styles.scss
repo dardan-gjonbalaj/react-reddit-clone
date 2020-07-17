@@ -1,0 +1,27 @@
+.comment {
+  border-top: 1px groove #222222;
+  display: block;
+  //color: #c78232;
+  //text-decoration-color: #c78232;
+
+  &__text {
+    margin: 1em;
+    font-size: 1rem;
+    color: #c78232;
+  }
+
+  &__author {
+    border-top: 0.1px groove #222222;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-indent: 3rem;
+    font-size: 1.3rem;
+  }
+
+  &__replies {
+    text-decoration-color: #222222;
+    border-left: 0.2px dashed #222222;
+    text-indent: 5rem;
+    border: 0.5rem;
+  }
+}

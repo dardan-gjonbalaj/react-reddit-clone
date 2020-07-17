@@ -1,37 +1,39 @@
-import React, { Component } from "react";
-import frontpage from "../pages/frontpage";
-import { increaseCount, decreaseCount } from "../../store/actions";
-import Post from "../vote/";
-class Vote extends Component {
-  constructor({ props }) {
-    super({ props });
-    this.state = {
-      count: props,
-    };
-  }
+import React, { useState } from "react";
 
-  upvote = (event) => {
-    console.log(event);
-    this.setState({ count: event + 1 });
+import "./styles.scss";
+
+const Vote = (props) => {
+  const [score, setScore] = useState(props.score);
+
+  const handleUpvote = () => {
+    setScore(score + 1);
   };
 
-  downvote = (event) => {
-    console.log(event);
-    this.setState({ count: event - 1 });
+  const handleDownvote = () => {
+    setScore(score - 1);
   };
 
-  render() {
-    return (
-      <div>
-        <button type="submit" onClick={() => this.upvote(this.state.count)}>
-          UP
-        </button>
-        <p>Votes: {this.state.count}</p>
-        <button type="submit" onClick={() => this.downvote(this.state.count)}>
-          DOWN
-        </button>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="vote">
+      <button
+        className="vote__button vote__button--up"
+        type="button"
+        onClick={handleUpvote}
+      >
+        UP
+      </button>
+
+      <span className="vote__score">{score}</span>
+
+      <button
+        className="vote__button vote__button--down"
+        type="button"
+        onClick={handleDownvote}
+      >
+        DOWN
+      </button>
+    </div>
+  );
+};
+
 export default Vote;

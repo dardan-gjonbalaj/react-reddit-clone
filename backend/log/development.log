@@ -853,3 +853,696 @@ Processing by FrontpagesController#show as HTML
 Completed 200 OK in 325ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2229)
 
 
+Started GET "/frontpages" for ::1 at 2020-07-15 22:20:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1191ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:22:32 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 389ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2227)
+
+
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:24:50 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Started GET "/frontpages" for ::1 at 2020-07-15 22:24:50 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 337ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4949)
+
+
+Completed 200 OK in 1095ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:35:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:35:56 -0400
+Processing by FrontpagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 360ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2450)
+
+
+Completed 200 OK in 931ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6081)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:36:12 -0400
+Processing by FrontpagesController#index as */*
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:36:12 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 349ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2425)
+
+
+Completed 200 OK in 1360ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5563)
+
+
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:37:14 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Started GET "/frontpages" for ::1 at 2020-07-15 22:37:14 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 345ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3937)
+
+
+Completed 200 OK in 756ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3667)
+
+
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:38:54 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Started GET "/frontpages" for ::1 at 2020-07-15 22:38:54 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 504ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3843)
+
+
+Completed 200 OK in 5961ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3890)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:41:25 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1357ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2466)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:41:57 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 723ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2240)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:42:20 -0400
+Processing by FrontpagesController#index as */*
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:42:20 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 561ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+Completed 200 OK in 882ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5540)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:42:21 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 820ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:45:11 -0400
+Processing by FrontpagesController#index as */*
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:45:11 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 987ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4117)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:45:12 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1138ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Completed 200 OK in 5411ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6946)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:45:31 -0400
+Processing by FrontpagesController#index as */*
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:45:32 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 379ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2221)
+
+
+Completed 200 OK in 939ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5536)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:45:32 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1503ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2477)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:47:35 -0400
+Processing by FrontpagesController#index as */*
+Started GET "/frontpages/AskReddit" for ::1 at 2020-07-15 22:47:35 -0400
+Processing by FrontpagesController#show as */*
+  Parameters: {"id"=>"AskReddit"}
+Completed 200 OK in 328ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2219)
+
+
+Completed 200 OK in 1148ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5551)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:47:36 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1128ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:48:53 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 866ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2431)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:48:53 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1040ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2441)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:04 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 815ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2429)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:05 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 619ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:28 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 965ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2460)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:29 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1310ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2461)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:43 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1174ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:44 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 979ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2440)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:53 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 803ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2432)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:49:54 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 838ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:53:03 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1195ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:54:09 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1077ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2438)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:54:11 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 922ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2437)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:55:14 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 840ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2435)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:55:24 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 829ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2437)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:55:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 6010ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:56:31 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 613ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2235)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:56:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1020ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2433)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:57:11 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 985ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2440)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-15 22:57:12 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 899ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 14:42:41 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 853ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3521)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 14:49:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 722ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 14:50:03 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 727ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2333)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 14:58:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 773ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2369)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:05:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 750ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2342)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:05:42 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 832ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2338)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:06:25 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 669ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2337)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:07:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 877ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2335)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:08:05 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 887ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2347)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:08:39 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 930ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2362)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:09:18 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 891ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2347)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:11:10 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 998ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2336)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:13:00 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 738ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2336)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:14:04 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 756ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2344)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:14:16 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1029ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2363)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:14:47 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 5680ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2354)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:15:01 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 779ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2338)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:15:08 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1161ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2345)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:15:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1091ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2362)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:16:05 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 836ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2343)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:16:10 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 850ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2345)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:17:03 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 885ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2361)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:18:24 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 934ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2345)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:19:13 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 693ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2244)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:20:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 857ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2334)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:21:34 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 664ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2333)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:21:51 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 828ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2339)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:22:50 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 726ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2338)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:23:19 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 985ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2363)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:23:40 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 792ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2332)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:24:44 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 899ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:25:13 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 738ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2333)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:25:18 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 885ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:26:52 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 736ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2331)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:27:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 942ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2364)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:28:28 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 622ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2331)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:28:52 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 760ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2332)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:29:55 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 985ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2334)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:32:08 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 896ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2337)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:34:11 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 886ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2249)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:35:13 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 844ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2325)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:36:04 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 738ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2341)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:36:19 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 968ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2353)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:36:27 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 846ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2344)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:36:53 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 824ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2346)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:37:05 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 738ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2344)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:37:10 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 954ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2341)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:37:26 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 849ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2345)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:48:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 911ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2248)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:51:03 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 737ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:52:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 799ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:52:06 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 779ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2360)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:52:49 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 854ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:53:08 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1069ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:54:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 823ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2256)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:54:51 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 868ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2365)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:55:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 894ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2376)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:56:09 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 815ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2372)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:56:19 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1082ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2376)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:56:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 887ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2372)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:56:51 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 946ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:57:39 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 809ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2368)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:58:01 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 908ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2387)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:58:54 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 995ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:59:12 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 5947ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2377)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 15:59:56 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 860ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2372)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 16:00:47 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1022ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2383)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 16:01:31 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1136ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2372)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 16:04:21 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 910ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2383)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 16:05:10 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 891ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2369)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 16:43:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1110ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2360)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:26:30 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 894ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2363)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:27:22 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 784ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2351)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:28:25 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 798ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2359)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:40:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 907ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2257)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:41:40 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 790ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2370)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:41:51 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 996ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2363)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:42:02 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 988ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2364)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:45:01 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 905ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2368)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:46:16 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 919ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2356)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:46:35 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 958ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:46:55 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 802ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2351)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:47:48 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 889ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2360)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:48:21 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1232ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2360)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:48:43 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1386ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2364)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:48:53 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 1004ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2361)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:51:45 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 869ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+Started GET "/frontpages" for ::1 at 2020-07-16 17:51:52 -0400
+Processing by FrontpagesController#index as */*
+Completed 200 OK in 851ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2360)
+
+

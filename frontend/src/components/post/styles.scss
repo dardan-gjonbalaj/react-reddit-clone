@@ -1,0 +1,59 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #dedede;
+  padding: 1rem;
+  margin: 1em;
+
+  &__link {
+    color: #cc3700;
+    text-decoration: none;
+  }
+
+  &__title {
+    display: solid #222222;
+    color: solid #222222;
+    margin: 1em;
+    font-size: 20px;
+    width: 99%;
+
+    &:hover {
+      color: #222222;
+    }
+  }
+
+  &__author {
+  }
+
+  &__text {
+    margin: 1em;
+  }
+
+  &__img {
+    display: block;
+    height: 50%;
+    width: 50%;
+    border: 20px;
+    margin: 0.1em;
+    padding: 0.1rem;
+  }
+
+  &__video {
+    display: block;
+    height: 60%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__comments {
+    display: inline;
+
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    word-break: break-word;
+    overflow: auto;
+    padding-bottom: 1px;
+  }
+}

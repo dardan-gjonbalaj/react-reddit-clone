@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Post from "../post";
 import shortid from "shortid";
-
+import "./styles.scss";
 class Comments extends Component {
   state = {
     post: null,
@@ -29,6 +29,7 @@ class Comments extends Component {
         console.log("wrew");
       });
   }
+  //{dangerouslySetInnerHTML={{ __html: comment.data.body_html }}}
 
   render() {
     if (!this.state.post) {
@@ -39,28 +40,30 @@ class Comments extends Component {
         <Post data={this.state.post} />
         <div>
           {this.state.comments[0].map((comment) => (
-            <div style={{ border: "1px solid black", marginBottom: "1rem" }}>
-              <p dangerouslySetInnerHTML={{ __html: comment.data.body_html }} />
-              <h3>{comment.data.author}</h3>
+            <div className="comment">
+              <h3 className="comment__author">{comment.data.author}</h3>
+              <p
+                className="comment__text"
+                dangerouslySetInnerHTML={{ __html: comment.data.body }}
+              />
 
               {comment.data.replies &&
                 comment.data.replies.data.children.map((c) => {
                   if (c.kind === "more") {
-                    return `${c.data.count} more replies`;
+                    return (
+                      <p className="comment__replies">
+                        {c.data.count} more replies
+                      </p>
+                    );
                   }
 
                   return (
-                    <div
-                      style={{
-                        border: "1px solid black",
-                        marginBottom: "1rem",
-                        marginLeft: "1rem",
-                      }}
-                    >
+                    <div>
+                      <h3 className="comment__author">{c.data.author}</h3>
                       <p
-                        dangerouslySetInnerHTML={{ __html: c.data.body_html }}
+                        className="comment__text"
+                        dangerouslySetInnerHTML={{ __html: c.data.body }}
                       />
-                      <h3>{c.data.author}</h3>
                     </div>
                   );
                 })}
