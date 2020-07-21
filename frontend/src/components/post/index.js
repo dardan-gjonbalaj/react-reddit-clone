@@ -5,8 +5,13 @@ import "./styles.scss";
 
 const Post = (props) => {
   useEffect(() => {
-    console.log(props.media);
+    console.log(props.data);
   }, []);
+
+  const handleOnClick = (event) => {
+    console.log(event);
+  };
+
   return (
     <div className="post">
       <Vote score={props.data.score} />
@@ -34,13 +39,19 @@ const Post = (props) => {
             className="post__img"
             src={props.data.url ? props.data.url : null}
             alt={props.data.thumbnail}
-            onError={props.data.thumbnail}
           />
         )}
 
         <Link className="post__comments" to={props.data.permalink}>
           comments: {props.data.num_comments}
         </Link>
+        <button
+          type="button"
+          className="post__save"
+          onClick={(event) => handleOnClick(props.data)}
+        >
+          SAVE
+        </button>
       </div>
     </div>
   );

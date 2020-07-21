@@ -1,0 +1,10 @@
+.frontpage {
+  &__button {
+    background-color: #f5fffa;
+    &:active {
+      color: #7fff00;
+      text-transform: "Post Saved!";
+      //pointer-events: ;
+    }
+  }
+}

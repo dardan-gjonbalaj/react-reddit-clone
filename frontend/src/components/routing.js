@@ -16,6 +16,9 @@ const Routing = ({ store }) => {
             <li>
               <Link to="/">Frontpage</Link>
             </li>
+            <li>
+              <Link to="/Saved_Posts"></Link>
+            </li>
           </ul>
 
           <Switch>
@@ -27,6 +30,9 @@ const Routing = ({ store }) => {
             </Route>
             <Route exact path="/r/:subreddit">
               <Subreddit />
+            </Route>
+            <Route exact path="/Saved_Posts">
+              {/*<SavedPosts />*/}
             </Route>
           </Switch>
         </div>

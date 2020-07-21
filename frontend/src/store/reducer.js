@@ -1,9 +1,8 @@
-import { INCREASE_COUNT, DECREASE_COUNT, ADD_POST } from "./types";
+import { INCREASE_COUNT, DECREASE_COUNT, ADD_POST, SAVE_POST } from "./types";
 
 export default (state = {}, action) => {
   switch (action.type) {
     case INCREASE_COUNT:
-      console.log(action.payload);
       return {
         ...state,
         count: action.payload + 1,
@@ -16,6 +15,15 @@ export default (state = {}, action) => {
       };
 
     case ADD_POST:
+      return {
+        ...state,
+        state: action.payload,
+      };
+
+    case SAVE_POST:
+      console.log(action.payload);
+      console.log(action.payload);
+      console.log(action.payload);
       return {
         ...state,
         state: action.payload,

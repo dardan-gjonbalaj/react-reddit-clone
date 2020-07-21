@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { addPost } from "../../store/actions";
+import { addPost, savePost } from "../../store/actions";
 import Post from "../post";
-import Vote from "../vote";
+//import Vote from "../vote";
 import shortid from "shortid";
+import "./styles.scss";
 
 class FrontPage extends Component {
   render() {
@@ -12,16 +13,43 @@ class FrontPage extends Component {
     }
 
     return (
-      <div>
+      <div className="frontpage">
         {this.props.state.data.map((post) => (
           <Fragment key={shortid.generate()}>
             <Post data={post} />
+            <button
+              className="frontpage__button frontpage_button--save"
+              type="button"
+              onClick={() => this.handleOnClick(post)}
+              ref="btn"
+            >
+              Save Post
+            </button>
           </Fragment>
         ))}
         {/*<pre>{JSON.stringify(this.state.data, null, 2)}</pre>*/}
       </div>
     );
   }
+
+  handleOnClick = (event) => {
+    console.log(event);
+    const kek = fetch(
+      `http://localhost:8000/posts`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({ event }),
+      }
+      //.then((res) => savePost(res))
+      //.then((json) => json)
+      //.catch((e) => console.log(event))
+    );
+    console.log(kek);
+  };
 
   componentDidMount() {
     fetch(`http://localhost:8000/frontpages`)
@@ -51,6 +79,7 @@ const mapStateToProps = ({ state }) => ({
 
 const mapDispatchToStore = (dispatch) => ({
   addPost: (payload) => dispatch(addPost(payload)),
+  savePost: (payload) => dispatch(savePost(payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToStore)(FrontPage);

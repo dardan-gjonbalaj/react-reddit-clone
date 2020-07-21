@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_07_15_201549) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "post"
+  create_table "posts", id: :string, force: :cascade do |t|
+    t.json "post"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
