@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Post from "../post";
 import shortid from "shortid";
+import Thread from "./thread";
 import "./styles.scss";
 class Comments extends Component {
   state = {
@@ -37,10 +38,20 @@ class Comments extends Component {
     }
     return (
       <div>
-        <Post data={this.state.post} />
+        <Post key={shortid.generate()} data={this.state.post} />
         <div>
           {this.state.comments[0].map((comment) => (
-            <div className="comment">
+            <Thread key={shortid.generate()} props={comment} />
+          ))}
+        </div>
+        <pre>{JSON.stringify(this.state.data, null, 2)}</pre>
+      </div>
+    );
+  }
+}
+
+export default withRouter(Comments);
+/* <div className="comment">
               <h3 className="comment__author">{comment.data.author}</h3>
               <p
                 className="comment__text"
@@ -58,7 +69,7 @@ class Comments extends Component {
                   }
 
                   return (
-                    <div>
+                    <div key={shortid.generate()}>
                       <h3 className="comment__author">{c.data.author}</h3>
                       <p
                         className="comment__text"
@@ -67,13 +78,4 @@ class Comments extends Component {
                     </div>
                   );
                 })}
-            </div>
-          ))}
-        </div>
-        <pre>{JSON.stringify(this.state.data, null, 2)}</pre>
-      </div>
-    );
-  }
-}
-
-export default withRouter(Comments);
+            </div> */

@@ -2,9 +2,9 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import App from "./app";
-import FrontPage from "./pages/frontpage";
+//import FrontPage from "./pages/frontpage";
 import Subreddit from "./pages/subreddit";
-import Vote from "./vote";
+import SavedPosts from "./pages/savedposts";
 import Comments from "./comments/";
 
 const Routing = ({ store }) => {
@@ -17,7 +17,7 @@ const Routing = ({ store }) => {
               <Link to="/">Frontpage</Link>
             </li>
             <li>
-              <Link to="/Saved_Posts"></Link>
+              <Link to="/Saved_Posts"> Saved Posts</Link>
             </li>
           </ul>
 
@@ -32,7 +32,7 @@ const Routing = ({ store }) => {
               <Subreddit />
             </Route>
             <Route exact path="/Saved_Posts">
-              {/*<SavedPosts />*/}
+              <SavedPosts />
             </Route>
           </Switch>
         </div>

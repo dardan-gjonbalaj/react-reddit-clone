@@ -1,17 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Vote from "../vote/";
 import "./styles.scss";
 
 const Post = (props) => {
-  useEffect(() => {
-    console.log(props.data);
-  }, []);
-
-  const handleOnClick = (event) => {
-    console.log(event);
-  };
-
   return (
     <div className="post">
       <Vote score={props.data.score} />
@@ -27,7 +19,7 @@ const Post = (props) => {
 
         {props.data.is_self ? (
           <p className="post__text">{props.data.selftext}</p>
-        ) : props.data.is_video && props.data.media != "null" ? (
+        ) : props.data.is_video && props.data.media !== "null" ? (
           <video className="post__video" controls>
             <source
               src={props.data.media.reddit_video.fallback_url}
@@ -45,13 +37,6 @@ const Post = (props) => {
         <Link className="post__comments" to={props.data.permalink}>
           comments: {props.data.num_comments}
         </Link>
-        <button
-          type="button"
-          className="post__save"
-          onClick={(event) => handleOnClick(props.data)}
-        >
-          SAVE
-        </button>
       </div>
     </div>
   );
