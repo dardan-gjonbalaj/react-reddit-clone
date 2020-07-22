@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
 class SavedPosts extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    //WILL FETCH FROM API TO GET ALL THE SAVED POSTS
+  }
 }

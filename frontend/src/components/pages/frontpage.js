@@ -17,11 +17,11 @@ class FrontPage extends Component {
         {this.props.state.data.map((post) => (
           <Fragment key={shortid.generate()}>
             <Post data={post} />
+
             <button
               className="frontpage__button frontpage_button--save"
               type="button"
               onClick={() => this.handleOnClick(post)}
-              ref="btn"
             >
               Save Post
             </button>
@@ -34,7 +34,7 @@ class FrontPage extends Component {
 
   handleOnClick = (event) => {
     console.log(event);
-    const kek = fetch(
+    const x = fetch(
       `http://localhost:8000/posts`,
       {
         method: "POST",
@@ -48,7 +48,7 @@ class FrontPage extends Component {
       //.then((json) => json)
       //.catch((e) => console.log(event))
     );
-    console.log(kek);
+    console.log(x);
   };
 
   componentDidMount() {

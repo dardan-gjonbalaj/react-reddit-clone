@@ -5,6 +5,10 @@
   padding: 1rem;
   margin: 1em;
 
+  &--saved {
+    background-color: green;
+  }
+
   &__link {
     color: #cc3700;
     text-decoration: none;

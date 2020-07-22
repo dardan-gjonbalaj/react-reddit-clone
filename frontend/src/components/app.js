@@ -7,6 +7,11 @@ import FrontPage from "./pages/frontpage";
 import "./app.css";
 
 class App extends Component {
+  componentDidMount() {
+    // make request for saved
+    // save to redux
+  }
+
   render() {
     return (
       <div>
