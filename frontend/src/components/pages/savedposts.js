@@ -23,10 +23,13 @@ class SavedPosts extends Component {
       return <p>loading...</p>;
     }
     return (
-      <div>
-        {this.state.saved.map((data) => (
-          <Post key={shortid.generate()} data={data.post} />
-        ))}
+      <div className="savedposts">
+        <h1 className="savedposts__header">Saved Posts:</h1>
+        <div className="savedposts__posts">
+          {this.state.saved.map((data) => (
+            <Post key={shortid.generate()} data={data.post} />
+          ))}
+        </div>
       </div>
     );
   }

@@ -38,6 +38,7 @@ class Subreddit extends Component {
 
     return (
       <div>
+        {console.log(this.state.data)}
         {this.state.data.map((post) => (
           <Post key={shortid.generate()} data={post} />
         ))}

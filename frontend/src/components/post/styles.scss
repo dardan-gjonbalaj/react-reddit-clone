@@ -27,6 +27,7 @@
   }
 
   &__author {
+    padding: 0.5rem;
   }
 
   &__text {
@@ -35,17 +36,22 @@
 
   &__img {
     display: block;
-    height: 50%;
-    width: 50%;
+    max-height: 500px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
     border: 20px;
     margin: 0.1em;
     padding: 0.1rem;
   }
 
   &__video {
+    padding: 1rem;
     display: block;
-    height: 60%;
-    width: 80%;
+    max-height: 500px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -59,5 +65,8 @@
     word-break: break-word;
     overflow: auto;
     padding-bottom: 1px;
+  }
+  &__url {
+    padding: 1.5em;
   }
 }

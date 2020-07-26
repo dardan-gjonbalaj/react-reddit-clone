@@ -1,10 +1,22 @@
 .frontpage {
+  background-color: #f4f6f6;
   &__button {
-    background-color: #f5fffa;
+    background-color: #aeb6bf;
     &:active {
       color: #7fff00;
       text-transform: "Post Saved!";
       //pointer-events: ;
     }
+  }
+}
+
+.savedposts {
+  background-color: #f4f6f6;
+
+  &__header {
+    background-color: #212f3d;
+    text-align: center;
+    font-size: 20px;
+    color: #85c1e9;
   }
 }

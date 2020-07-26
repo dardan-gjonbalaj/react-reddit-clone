@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { addPost, savePost } from "../../store/actions";
 import Post from "../post";
-//import Vote from "../vote";
 import shortid from "shortid";
 import "./styles.scss";
 
@@ -33,21 +32,17 @@ class FrontPage extends Component {
   }
 
   handleOnClick = (event) => {
+    //I can make the redux action savePost handle but this is for simplicity sake
+
     console.log(event);
-    const x = fetch(
-      `http://localhost:8000/posts`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({ event }),
-      }
-      //.then((res) => savePost(res))
-      //.then((json) => json)
-      //.catch((e) => console.log(event))
-    );
+    const x = fetch(`http://localhost:8000/posts`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ event }),
+    });
     console.log(x);
   };
 
@@ -65,7 +60,6 @@ class FrontPage extends Component {
         }, []);
 
         this.props.addPost({ data });
-        //console.log(this.props);
       })
       .catch((err) => {
         // redirect to 404

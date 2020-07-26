@@ -2,7 +2,6 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import App from "./app";
-//import FrontPage from "./pages/frontpage";
 import Subreddit from "./pages/subreddit";
 import SavedPosts from "./pages/savedposts";
 import Comments from "./comments/";
