@@ -9,7 +9,7 @@ console.log(store);
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Routing store={store} />
+      <Routing />
     </React.StrictMode>
   </Provider>,
   document.getElementById("root")

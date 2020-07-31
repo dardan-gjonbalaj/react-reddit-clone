@@ -1,6 +1,6 @@
 import { INCREASE_COUNT, DECREASE_COUNT, ADD_POST, SAVE_POST } from "./types";
 
-export default (state = {}, action) => {
+export default (state = { count: 0, posts: {} }, action) => {
   switch (action.type) {
     case INCREASE_COUNT:
       return {
@@ -17,16 +17,15 @@ export default (state = {}, action) => {
     case ADD_POST:
       return {
         ...state,
-        state: action.payload,
+        posts: action.payload,
       };
 
     case SAVE_POST:
-      console.log(action.payload);
-      console.log(action.payload);
-      console.log(action.payload);
+      console.log(action);
+
       return {
         ...state,
-        state: action.payload,
+        saved: action.json,
       };
 
     default:

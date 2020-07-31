@@ -1,19 +1,19 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { addPost, savePost } from "../../store/actions";
+import { addPost, savePost, fetchPosts } from "../../store/actions";
 import Post from "../post";
 import shortid from "shortid";
 import "./styles.scss";
 
 class FrontPage extends Component {
   render() {
-    if (!this.props.state) {
+    if (!this.props.posts.data) {
       return <p>loading...</p>;
     }
 
     return (
       <div className="frontpage">
-        {this.props.state.data.map((post) => (
+        {this.props.posts.data.map((post) => (
           <Fragment key={shortid.generate()}>
             <Post data={post} />
 
@@ -31,49 +31,35 @@ class FrontPage extends Component {
     );
   }
 
-  handleOnClick = (event) => {
-    //I can make the redux action savePost handle but this is for simplicity sake
-
-    console.log(event);
-    const x = fetch(`http://localhost:8000/posts`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({ event }),
-    });
-    console.log(x);
-  };
-
   componentDidMount() {
-    fetch(`http://localhost:8000/frontpages`)
-      .then((res) => res.json())
-      .then((json) => {
-        const {
-          data: { children },
-        } = json;
-
-        const data = children.reduce((acc, curr) => {
-          acc.push(curr.data);
-          return acc;
-        }, []);
-
-        this.props.addPost({ data });
-      })
-      .catch((err) => {
-        // redirect to 404
-      });
+    this.props.fetchPosts();
   }
+
+  handleOnClick = (event) => {
+    this.props.savePost(event);
+
+    //I can make the redux action savePost handle but this is for simplicity sake
+    //   const x = fetch(`http://localhost:8000/posts`, {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Accept: "application/json",
+    //     },
+    //     body: JSON.stringify({ event }),
+    //   });
+    //   console.log(x);
+    // };
+  };
 }
 
-const mapStateToProps = ({ state }) => ({
-  state,
+const mapStateToProps = ({ posts }) => ({
+  posts,
 });
 
 const mapDispatchToStore = (dispatch) => ({
   addPost: (payload) => dispatch(addPost(payload)),
   savePost: (payload) => dispatch(savePost(payload)),
+  fetchPosts: () => dispatch(fetchPosts()),
 });
 
 export default connect(mapStateToProps, mapDispatchToStore)(FrontPage);

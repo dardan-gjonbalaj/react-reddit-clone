@@ -6,17 +6,15 @@ class PostsController < ApplicationController
   end
 
   def create
-    puts params[:event][:id]
-    
-    post = Post.create(id: params[:event][:permalink], post: params[:event])
-    
+    puts params[:payload][:id]
+    post = Post.create(id: params[:payload][:permalink], post: params[:payload]) 
     render json: post
     end
 
   def show
-  puts params
-  post = Post.find_by_id(params[:id])
-  render json: post
+    puts params
+    post = Post.find_by_id(params[:id])
+    render json: post
   end
   
 
